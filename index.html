@@ -14,6 +14,13 @@
       integrity="sha512-..."
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-LBUlaTE+8lwsMoX91jx2JWc41P7C0+b/JwNx7bYNdxM0f40EXR9NVP1q8BSQ4sXzVyojQXT2ocJnXvwlsEMTKA=="
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/utilities.css" />
@@ -24,19 +31,84 @@
 
     <!-- Header - Reut -->
     <header class="header-container flex column">
-      <div class="nav-logobar flex">
-        <div class="logo">
-          <img src="images/amazon-logo.png" alt="amazon-icon" />
-        </div>
-        <div class="country flex">
-          <div class="location-icon-container"></div>
-          <div class="column">
+      <div class="nav-logobar flex space-between">
+        <img
+          class="logo flex align-items"
+          src="images/amazon-logo.png"
+          alt="amazon-icon"
+        />
+
+        <div class="country flex align-items">
+          <div class="location-icon-container">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+          </div>
+
+          <div class="column align-items">
             <p>Deliver to</p>
-            <p>Israel</p>
+            <strong><p>Israel</p></strong>
+          </div>
+
+          <div class="search-nav align-items">
+            <select name="all" id="">
+              <option value="All">All</option>
+              <input type="text" placeholder="Search amazon" />
+              <i class="fas fa-search"></i>
+            </select>
           </div>
         </div>
+
+        <div class="language flex align-items">
+          <img
+            class="US-icon"
+            src="https://icons.iconarchive.com/icons/wikipedia/flags/512/US-United-States-Flag-icon.png"
+            alt="US flag"
+          />
+          <p>
+            <strong> EN </strong>
+          </p>
+        </div>
+        <div class="sign-in flex column justify-content">
+          <p>Hello, sign in</p>
+          <strong>
+            <p>
+              Account & lists
+              <!-- <i class="fas fa-chevron-down"></i> -->
+            </p></strong
+          >
+        </div>
+        <div class="return-orders flex column justify-content">
+          <p>Return</p>
+          <span>
+            <p>& Orders</p>
+          </span>
+        </div>
+        <div class="flex align-items">
+          <img
+            class="cart-img flex align-items"
+            src="./images/cart.png"
+            alt="cart"
+          />
+        </div>
       </div>
-      <div></div>
+
+      <div class="nav-bar flex align-items gap">
+        <i class="fas fa-bars"></i>
+        <p>All</p>
+        <p>Today's Deals</p>
+        <p>Customer Service</p>
+        <p>Registry</p>
+        <p>Gift Cards</p>
+        <p>Sell</p>
+      </div>
+
+      <div class="data flex align-items">
+        <strong>
+          <p>
+            We are experiencing shipping delays in your area. Please expect
+            extended delivery time.
+          </p>
+        </strong>
+      </div>
     </header>
 
     <!-- Hero section - Avi -->
