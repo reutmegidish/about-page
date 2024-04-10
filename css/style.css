@@ -86,30 +86,88 @@ input {
   display: block;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   
 }
 
 .top-area {
+  position: relative;
   padding-top: 12rem;
   display: flex;
   justify-content: space-around;
+  z-index: 2;
+}
+
+.top-area i {
+  position: absolute;
+  color: black;
+  height: 30px;
+  width: 30px;
+  z-index: 3;
 }
 
 .cards-area {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .card {
+  position: relative;
+  padding: 1rem;
   background: #fff;
-  padding: 2rem;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  height: 60vh;
+  width: 25%;
+}
+
+.see {
+  position: absolute;
+  flex-grow: 1;
+  color: #2ab1a3;
+  bottom: 0;
+  padding: 0.5rem;
+}
+
+.card1 {
+  margin: 0 2rem;
 }
 
 .card-items {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card.card4 img {
+  padding: 2rem;
+}
+
+.card-item {
+  padding: 0.5rem;
+}
+
+.card-item p {
+  font-size: smaller;
+}
+
+.card-item img {
+  /* padding-right: 1rem; */
+  width: 100%;
+  height: 15vh;
+  /* margin: 1rem; */
+}
+
+/* Laptop */
+
+@media screen and (max-width: 1700px) {
+.inner-container {
+  width: 100%;
+}
 }
