@@ -277,16 +277,28 @@ footer {
 .footer-navbar-container {
   background-color: #232f3e;
 }
-.footer-navbar {
+.footer-navbar,
+.amazon-links-footer {
   display: grid;
   width: 75vw;
   height: auto;
   margin: auto;
-  grid-template-columns: repeat(4, 1fr);
+
   line-height: 1.8rem;
 }
-.footer-navbar-section {
-  padding: 2rem;
+.footer-navbar {
+  grid-template-columns: repeat(4, 1fr);
+}
+.last-footer-container {
+  background-color: #131a22;
+}
+.amazon-links-footer {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.footer-navbar-section,
+.amazon-links-footer-item {
+  padding: 1.5rem;
 }
 .p-heading-nav-footer {
   font-size: 1rem;
@@ -317,6 +329,27 @@ hr {
   height: 35px;
   border: 1px solid rgba(139, 137, 137, 0.5);
   padding: 4px 0 4px 10px;
+}
+.amazon-links-footer-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+  line-height: 1rem;
+}
+.p-heading-amazon-links-footer {
+  font-size: 0.8rem;
+}
+.p-content-amazon-links-footer {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+.copyright {
+  width: 100%;
+  background-color: #131a22;
+  padding: 30px;
+}
+.p-copyright {
+  margin: auto;
 }
 
 /* Laptop */
