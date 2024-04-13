@@ -236,8 +236,7 @@ select {
   display: block;
   width: 100%;
   background: #fff;
-  margin: 0 2rem;
-  overflow: scroll;
+  /* margin: 0 2rem; */
 }
 
 .line h2 {
@@ -247,6 +246,8 @@ select {
 
 .roller {
   display: flex;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .roller img {
