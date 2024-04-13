@@ -24,90 +24,70 @@
 
     <title>Amazon.com</title>
   </head>
+
   <body>
     <!-- Header - Reut -->
     <header class="header-container flex column">
       <div class="nav-logobar flex space-between">
-        <img
-          class="logo"
-          src="images/header_images/amazon-logo.png"
-          alt="amazon-logo"
-        />
+        <img class="logo flex align-items" src="images/" alt="amazon-icon" />
 
-        <div class="deliver flex">
-          <img
-            class="location-icon"
-            src="images/header_images/location-icon.png"
-            alt=""
-          />
+        <div class="country flex align-items">
+          <div class="location-icon-container">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+          </div>
 
-          <div class="flex column justify-content">
-            <p class="p-secondery">Deliver to</p>
+          <div class="column align-items">
+            <p>Deliver to</p>
             <strong><p>Israel</p></strong>
           </div>
-        </div>
 
-        <div class="search-nav flex">
-          <select class="select" name="all">
-            <option value="All">All</option>
-          </select>
-          <input class="serch-input" type="text" placeholder="Search amazon" />
-          <div class="search-icon flex align-items">
-            <i class="fas fa-search"></i>
+          <div class="search-nav">
+            <select class="option" name="all" id="">
+              <option value="All">All</option>
+            </select>
+            <input type="text" placeholder="Search amazon" />
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
+            </div>
           </div>
         </div>
 
         <div class="language flex align-items">
           <img
-            class="US-flug"
-            src="images/header_images/us-flag.png"
+            class="US-icon"
+            src="https://icons.iconarchive.com/icons/wikipedia/flags/512/US-United-States-Flag-icon.png"
             alt="US flag"
           />
           <p>
             <strong> EN </strong>
           </p>
+        </div>
+        <div class="sign-in flex column justify-content">
+          <p>Hello, sign in</p>
+          <strong>
+            <p>
+              Account & lists
+              <!-- <i class="fas fa-chevron-down"></i> -->
+            </p></strong
+          >
+        </div>
+        <div class="return-orders flex column justify-content">
+          <p>Return</p>
+          <span>
+            <p>& Orders</p>
+          </span>
+        </div>
+        <div class="flex align-items">
           <img
-            class="shevron-icon"
-            src="images/header_images/shevron.png"
-            alt="shevron-icon"
+            class="cart-img flex align-items"
+            src="./images/cart.png"
+            alt="cart"
           />
         </div>
-
-        <div class="sign-in flex align-items">
-          <div>
-            <p class="p-content">Hello, sign in</p>
-            <strong class="flex">
-              <p>Account & lists</p>
-            </strong>
-          </div>
-          <img
-            class="shevron-icon"
-            src="images/header_images/shevron.png"
-            alt="shevron-icon"
-          />
-        </div>
-
-        <div class="return-orders flex align-items">
-          <div>
-            <p class="p-content">Return</p>
-            <strong class="flex">
-              <p>& Orders</p>
-            </strong>
-          </div>
-
-          <img
-            class="shevron-icon"
-            src="images/header_images/shevron.png"
-            alt="shevron-icon"
-          />
-        </div>
-
-        <img class="cart-img" src="./images/cart.png" alt="cart" />
       </div>
 
       <div class="nav-bar flex align-items gap">
-        <img src="images/header_images/hamburg.png" alt="hamburg-menu" />
-        <!-- <i class="fas fa-bars"></i> -->
+        <i class="fas fa-bars"></i>
         <p>All</p>
         <p>Today's Deals</p>
         <p>Customer Service</p>
@@ -130,8 +110,8 @@
     <section class="hero1">
       <div class="inner-container">
         <div class="top-area">
-          <i class="fas fa-chevron-left chevron-left"></i>
-          <i class="fas fa-chevron-right chevron-right"></i>
+          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
         </div>
         <div class="cards-area">
           <div class="card card1">

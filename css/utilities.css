@@ -7,9 +7,6 @@
 .space-between {
   justify-content: space-between;
 }
-.end {
-  align-self: flex-end;
-}
 .align-items {
   align-items: center;
 }
