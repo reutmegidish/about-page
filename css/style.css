@@ -243,6 +243,27 @@ select {
   max-width: 200px;
   height: 100%;
 }
+/* Lines area */
+.line {
+  display: block;
+  width: 100%;
+  background: #fff;
+}
+
+.line h2 {
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.roller {
+  display: flex;
+}
+
+.roller img {
+  margin-left: 5rem;
+  max-width: 200px;
+  height: 100%;
+}
 /* Laptop */
 
 @media screen and (max-width: 1700px) {
